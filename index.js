@@ -113,7 +113,6 @@ client.on("message", async(message) =>{
     }
   }
   if (command == prefix + 'delete') {
-    if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.lineReply(`:x: This command requires \`MANAGE_MESSAGES\` permission.`);
     let channel = message.mentions.channels.first() || message.channel;
     const sfats = await db.get(`Staff_${message.guild.id}`)
     if (!sfats) return message.lineReply({ embed: { description: `this server needs to set up their staff roles first! \`{prefix}setstaff\``, color: 0x5865F2 } })
@@ -134,7 +133,6 @@ client.on("message", async(message) =>{
     }
   }
   if (command == prefix + 'close') {
-    if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.lineReply(`:x: This command requires \`MANAGE_MESSAGES\` permission.`);
     let channel = message.mentions.channels.first() || message.channel;
     const sfats = await db.get(`Staff_${message.guild.id}`)
     if (!sfats) return message.lineReply({ embed: { description: `this server needs to set up their staff roles first! \`{prefix}setstaff\``, color: 0x5865F2 } })
@@ -208,7 +206,6 @@ client.on("message", async(message) =>{
     }
   }
   if (command == prefix + 'rename' || command == prefix + 'setname') {
-    if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.lineReply(`:x: This command requires \`MANAGE_MESSAGES\` permission.`);
     let channel = message.mentions.channels.first() || message.channel;
     const sfats = await db.get(`Staff_${message.guild.id}`)
     if (!sfats) return message.lineReply({ embed: { description: `this server needs to set up their staff roles first! \`{prefix}setstaff\``, color: 0x5865F2 } })
