@@ -397,7 +397,7 @@ client.on('clickMenu', async (button) => {
               .setTitle("General Support")
               .setFooter(`Ticket opened at`)
               .setColor(0x5865F2)
-              .setDescription(`Support will be with you soon.\n
+              .setDescription(`GSL staff will be with you soon.\n
       To close this ticket, interact with 🔒`)
             let idd = randomstring.generate({ length: 25 })
             await db.set(`close_${button.clicker.user.id}`, idd)
