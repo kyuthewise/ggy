@@ -260,11 +260,6 @@ client.on("message", async(message) =>{
     let idd = randomstring.generate({ length: 20 })
     let args = message.content.split(' ').slice(1).join(' ');
     if (!args) args = `Tickets`
-    let button1 = new MessageMenuOption()
-    .setLabel('Special Support')
-    .setEmoji('🔴')
-    .setValue("men")
-    .setDescription('Use this to contact Advisers and Principles!')
     let button3 = new MessageMenuOption()
     .setLabel('General Support')
     .setEmoji('🟠')
@@ -275,7 +270,7 @@ client.on("message", async(message) =>{
     .setPlaceholder('Create A ticket!')
     .setMaxValues(1)
     .setMinValues(1)
-    .addOptions(button1, button3)
+    .addOptions(button3)
     let embed = new Discord.MessageEmbed()
       .setTitle(args)
       .setDescription("To create a ticket, select one of the options below from the menu.")
