@@ -273,7 +273,7 @@ client.on("message", async(message) =>{
     .addOptions(button3)
     let embed = new Discord.MessageEmbed()
       .setTitle(args)
-      .setDescription("To create a ticket, select one of the options below from the menu.")
+      .setDescription("To create a ticket, select one of the options below from the menu.\nOne ticket has a long cooldown so make sure to get the most out of it ;w")
       .setThumbnail(message.guild.iconURL())
       .setTimestamp()
       .setColor(0x5865F2)
