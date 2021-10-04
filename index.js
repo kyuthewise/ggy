@@ -23,9 +23,9 @@ async function channelLog(embed) {
 client.on('ready', async () => {
   await console.clear()
   channelLog(`> The **Bot** is connecting to discord API`)
-  console.log(`Made by Tejas Lamba$1924`)
-  console.log(`Credits | Visa2Code | https://discord.gg/xtessK2DPA`)
-  console.log(`Join above or you gay`)
+  console.log(`Made by kyu`)
+  console.log(`plss`)
+  console.log(`nuce`)
   client.user.setActivity(config.status.name, { type: config.status.type.toUpperCase(), url: "https://twitch.tv/SmallCadaver" })
 });
 client.on("message", async(message) =>{
@@ -264,12 +264,12 @@ client.on("message", async(message) =>{
     .setLabel('Special Support')
     .setEmoji('🔴')
     .setValue("men")
-    .setDescription('Use this to contact Admins+ only!')
+    .setDescription('Use this to contact Advisers and Principles only!')
     let button3 = new MessageMenuOption()
     .setLabel('General Support')
     .setEmoji('🟠')
     .setValue("hlp")
-    .setDescription('Use this to contact Helpers and higher ranks!')  
+    .setDescription('Use this to contact Supervisors and higher ranks!')  
     let select = new MessageMenu()
     .setID(idd)
     .setPlaceholder('Create A ticket!')
@@ -350,7 +350,7 @@ client.on('clickMenu', async (button) => {
           .setTitle("Specialised Support")
           .setFooter(`Ticket opened at`)
           .setColor(0x5865F2)
-          .setDescription(`Support will be with you soon.\n
+          .setDescription(`GSL Staff will be with you soon.\n
   To close this ticket, interact with 🔒`)
         let idd = randomstring.generate({ length: 25 })
         let bu1tton = new disbut.MessageButton()

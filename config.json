@@ -2,6 +2,6 @@
   "prefix": "!",
   "status":{
     		"name": "tickets!",
-    		"type": "streaming"
+    		"type": "listening"
     	}
 }
