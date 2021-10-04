@@ -298,6 +298,7 @@ client.on("message", async(message) =>{
         msgID: msg.id,
         id: idd,
         options: [button1,  button3],
+        button1: button3,
         guildName: message.guild.name,
         guildAvatar: message.guild.iconURL(),
         channelID: message.channel.id
