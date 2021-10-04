@@ -1,5 +1,6 @@
 node_modules/
 *.sqlite
+.env
 tmp.js
 sqlite/
 logs/
